@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: calc(1em + 1vw);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(145, 184, 151);
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 1rem;
+}
+
+header{
+    font-size: 1,5rem;
+    font-weight: 500;
+    grid-area: header;
+    background-color: rgb(115, 152, 121);
+}
+
+/*OBS denne flytta noe i headeren*/
+header nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header nav div i{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#logo{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    display: none;
+}
+
+/*OBS fiks farger*/
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(115, 152, 121);
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a{
+    color: black;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+main{
+    grid-area: main;
+}
+
+main section h1{
+    text-align: center;
+}
+
+main section a{
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+}
+
+ul{
+    list-style: none;
+}
+
+footer nav ul{
+    padding-left: 0;
+}
+
+footer nav ul li a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(115, 152, 121);
+    padding: 1rem;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+footer nav h4{
+    font-size: medium;
+    text-align: center;
+    width: 100%;
+    color: rgb(68, 69, 68);
+}
+
